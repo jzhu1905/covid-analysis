@@ -95,4 +95,6 @@ if __name__ == "__main__":
     #
     # merged_df = merge_dfs(hospitalization_cases_us_weekly_df, search_trend_df)
     # merged_df.to_pickle(f"{DATA_FILE}/processed/merged.pkl")
+
+    # merged_df = load_processed_data("merged")
     pass
