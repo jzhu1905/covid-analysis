@@ -2,3 +2,5 @@
 */.DS_Store
 .idea/*
 /venv/*
+.ipynb_checkpoints/
+*/__pycache__/*

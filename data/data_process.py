@@ -81,20 +81,3 @@ def load_processed_data(file_name):
             df = aggregate_daily_stats_to_weekly(df)
         df.to_pickle(file_path.with_suffix('.pkl'))
     return pd.read_pickle(file_path.with_suffix('.pkl'))
-
-
-if __name__ == "__main__":
-    # select only us data for hospitalization df and save to a pickle file
-    # hospitalization_cases_df = load_raw_data("aggregated_cc_by")
-    # hospitalization_cases_us_df = hospitalization_cases_df[
-    #     hospitalization_cases_df["open_covid_region_code"].str.contains("US-")]
-    # hospitalization_cases_us_df.to_pickle(f"{DATA_FILE}/raw/aggregated_cc_by_us.pkl")
-
-    # hospitalization_cases_us_weekly_df = load_processed_data("aggregated_cc_by_us")
-    # search_trend_df = load_processed_data("2020_US_weekly_symptoms_dataset_v003")
-    #
-    # merged_df = merge_dfs(hospitalization_cases_us_weekly_df, search_trend_df)
-    # merged_df.to_pickle(f"{DATA_FILE}/processed/merged.pkl")
-
-    # merged_df = load_processed_data("merged")
-    pass
